@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function smartForm(
+function smartForm(
   {handleSubmit, handleChange, validate, initialValues},
   reactComponent
 ) {
@@ -69,3 +69,7 @@ export default function smartForm(
     }
   };
 }
+
+export default {
+  createForm: smartForm
+};
