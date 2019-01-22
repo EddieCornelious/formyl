@@ -1,8 +1,8 @@
 {
-  "name": "forma",
+  "name": "formyl",
   "version": "0.0.0",
   "description": "smart form for react",
-  "main": "lib/forma.js",
+  "main": "lib/formyl.js",
   "scripts": {
     "build": "rimraf -rf lib .nyc_output && webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --watch --env dev",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EddieCornelious/forma.git"
+    "url": "https://github.com/EddieCornelious/formyl.git"
   },
   "keywords": [],
   "author": "Eddie Cornelious",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EddieCornelious/forma/issues"
+    "url": "https://github.com/EddieCornelious/formyl/issues"
   },
-  "homepage": "https://github.com/EddieCornelious/forma/",
+  "homepage": "https://github.com/EddieCornelious/formyl/",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",

@@ -32,7 +32,7 @@ const config = {
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
-    library: "Forma",
+    library: "Formyl",
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

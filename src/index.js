@@ -1,6 +1,6 @@
 import React from 'react';
 
-function smartForm(
+export function smartForm(
   {handleSubmit, handleChange, validate, initialValues},
   reactComponent
 ) {
@@ -70,6 +70,3 @@ function smartForm(
   };
 }
 
-export default {
-  createForm: smartForm
-};
