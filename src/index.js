@@ -13,22 +13,19 @@ export function smartForm(
       this.errors = {};
       this.values = initialValues;
       this.state = {
-        updater: false,
         isSubmitting: false
       };
     }
 
     preSubmit(e) {
       e.preventDefault();
-
-      const values = this.values;
-      const errors = validate(values);
       const self = this;
+      const values = self.values;
+      self.errors = validate(values);
 
-      if (Object.keys(errors).length > 0) {
+      if (Object.keys(self.errors).length > 0) {
         return self.setState({
-          isSubmitting: false,
-          updater: !self.state.updater
+          isSubmitting: false
         });
       }
       return self.setState(
@@ -49,7 +46,6 @@ export function smartForm(
       self.values = Object.assign({}, self.values, {[name]: value});
       handleChange(self.values);
       self.setState({
-        updater: !self.state.updater,
         isSubmitting: false
       });
     }
@@ -69,4 +65,3 @@ export function smartForm(
     }
   };
 }
-
