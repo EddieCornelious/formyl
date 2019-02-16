@@ -31,29 +31,29 @@ class Form extends React.Component {
   render() {
     return (
       
-      &lt;div&gt;
-        &lt;form onSubmit={this.props.onSubmit}&gt;
-          &lt;input
+      <div>
+        <form onSubmit={this.props.onSubmit}>
+          <input
             value={this.props.values.name}
-            name=&quot;name&quot;
+            name="name"
             onChange={this.props.onChange}
-            type=&quot;text&quot;
-          /&gt;
-          &lt;input
+            type="text"
+          />
+          <input
             value={this.props.values.email}
-            name=&quot;email&quot;
+            name="email"
             onChange={this.props.onChange}
-            type=&quot;text&quot;
-          /&gt;
-          &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
-        &lt;/form&gt;
-        &lt;h1&gt;{!this.props.errors.name ? &quot;VALID&quot; : this.props.errors.name}&lt;/h1&gt;
-        &lt;h1&gt;
+            type="text"
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <h1>{!this.props.errors.name ? "VALID" : this.props.errors.name}</h1>
+        <h1>
           {!this.props.errors.email
-            ? &quot;VALID&quot;
-            : this.props.errors.email.map(e =&gt; e)}
-        &lt;/h1&gt;
-      &lt;/div&gt;
+            ? "VALID"
+            : this.props.errors.email.map(e => e)}
+        </h1>
+      </div>
      
     );
   }
