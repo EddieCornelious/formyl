@@ -1,6 +1,6 @@
 {
   "name": "formyl",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "smart form for react",
   "main": "lib/formyl.js",
   "scripts": {
