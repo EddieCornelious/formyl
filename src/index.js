@@ -21,6 +21,7 @@ export function smartForm(
       e.preventDefault();
       const self = this;
       const values = self.values;
+
       self.errors = validate(values);
 
       if (Object.keys(self.errors).length > 0) {
